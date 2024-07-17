@@ -61,21 +61,15 @@ magenta = rgb(255, 0, 255)
 silver = rgb(192, 192, 192)
 grey = rgb(128, 128, 128)
 ### Red
-maroon = rgb(128, 0, 0) # NTS: adv colors with # after them need to be added to final format + printlist
-terracotta = rgb(205, 92, 92) #
 ### Orange
 coral = rgb(240, 128, 128) #
-salmon = rgb(233, 150, 122) #
 ### Yellow
 gold = rgb(255, 215, 0) #
-goldenrod = rgb(218, 165, 32) #
 ### Green
 olive = rgb(128, 128, 0) #
 chartreuse = rgb(127, 255, 0) #
 ### Blue
-slategrey = rgb(47, 79, 79) #
 navy = rgb(0, 0, 128) #
-midnightblue = rgb(25, 25, 112) #
 royalblue = rgb(65, 105, 225) #
 ### Purple
 indigo = rgb(75, 0, 130) #
@@ -109,14 +103,33 @@ def csilver(text):
     return silver + text + reset
 def cgrey(text):
     return grey + text + reset
-
 ### Red
 ### Orange
+def ccoral(text):
+    return coral + text + reset
 ### Yellow
+def cgold(text):
+    return gold + text + reset
 ### Green
+def colive(text):
+    return olive + text + reset
+def cchartreuse(text):
+    return chartreuse + text + reset
 ### Blue
+def cnavy(text):
+    return navy + text + reset
+def croyalblue(text):
+    return royalblue + text + reset
 ### Purple
+def cindigo(text):
+    return indigo + text + reset
+def corchid(text):
+    return orchid + text + reset
 ### Brown
+def cbrown(text):
+    return brown + text + reset
+def ckhaki(text):
+    return khaki + text + reset
 
 ### Demo ###
 # I recommend you to delete anything beyond this comment if you're using this .py script in another project by importing it.
@@ -142,6 +155,16 @@ print(cmagenta("This text is magenta."))
 print(italic("Advanced Colors"))
 print(csilver("This text is silver."))
 print(cgrey("This text is grey."))
+print(ccoral("This text is coral."))
+print(cgold("This text is gold."))
+print(colive("This text is olive."))
+print(cchartreuse("This text is chartreuse."))
+print(cnavy("This text is navy."))
+print(croyalblue("This text is royal blue."))
+print(cindigo("This text is indigo."))
+print(corchid("This text is orchid."))
+print(cbrown("This text is brown."))
+print(ckhaki("This text is khaki."))
 linebreak()
 
 # You can combine different formats by doing something similar to this.
